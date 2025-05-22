@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		189FA5542DD90ECB00257251 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189FA5532DD90ECB00257251 /* NetworkExtension.framework */; };
+		189FA55C2DD90ECB00257251 /* FilterControlProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 189FA5512DD90ECB00257251 /* FilterControlProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		189FA5672DD90EE100257251 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189FA5532DD90ECB00257251 /* NetworkExtension.framework */; };
+		189FA56F2DD90EE100257251 /* FilterDataProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 189FA5662DD90EE100257251 /* FilterDataProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		189FA5312DD90EA200257251 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +28,62 @@
 			remoteGlobalIDString = 189FA51F2DD90E9F00257251;
 			remoteInfo = firewall;
 		};
+		189FA55A2DD90ECB00257251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189FA5182DD90E9F00257251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189FA5502DD90ECB00257251;
+			remoteInfo = FilterControlProvider;
+		};
+		189FA56D2DD90EE100257251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189FA5182DD90E9F00257251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189FA5652DD90EE100257251;
+			remoteInfo = FilterDataProvider;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		189FA5612DD90ECB00257251 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				189FA55C2DD90ECB00257251 /* FilterControlProvider.appex in Embed Foundation Extensions */,
+				189FA56F2DD90EE100257251 /* FilterDataProvider.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		189FA5202DD90E9F00257251 /* firewall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firewall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189FA5302DD90EA200257251 /* firewallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firewallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189FA53A2DD90EA200257251 /* firewallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firewallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		189FA5512DD90ECB00257251 /* FilterControlProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterControlProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		189FA5532DD90ECB00257251 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		189FA5662DD90EE100257251 /* FilterDataProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterDataProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		189FA55D2DD90ECB00257251 /* Exceptions for "FilterControlProvider" folder in "FilterControlProvider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 189FA5502DD90ECB00257251 /* FilterControlProvider */;
+		};
+		189FA5702DD90EE100257251 /* Exceptions for "FilterDataProvider" folder in "FilterDataProvider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 189FA5652DD90EE100257251 /* FilterDataProvider */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		189FA5222DD90E9F00257251 /* firewall */ = {
@@ -43,6 +99,22 @@
 		189FA53D2DD90EA200257251 /* firewallUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = firewallUITests;
+			sourceTree = "<group>";
+		};
+		189FA5552DD90ECB00257251 /* FilterControlProvider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				189FA55D2DD90ECB00257251 /* Exceptions for "FilterControlProvider" folder in "FilterControlProvider" target */,
+			);
+			path = FilterControlProvider;
+			sourceTree = "<group>";
+		};
+		189FA5682DD90EE100257251 /* FilterDataProvider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				189FA5702DD90EE100257251 /* Exceptions for "FilterDataProvider" folder in "FilterDataProvider" target */,
+			);
+			path = FilterDataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +141,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		189FA54E2DD90ECB00257251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189FA5542DD90ECB00257251 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189FA5632DD90EE100257251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189FA5672DD90EE100257251 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +166,9 @@
 				189FA5222DD90E9F00257251 /* firewall */,
 				189FA5332DD90EA200257251 /* firewallTests */,
 				189FA53D2DD90EA200257251 /* firewallUITests */,
+				189FA5552DD90ECB00257251 /* FilterControlProvider */,
+				189FA5682DD90EE100257251 /* FilterDataProvider */,
+				189FA5522DD90ECB00257251 /* Frameworks */,
 				189FA5212DD90E9F00257251 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +179,18 @@
 				189FA5202DD90E9F00257251 /* firewall.app */,
 				189FA5302DD90EA200257251 /* firewallTests.xctest */,
 				189FA53A2DD90EA200257251 /* firewallUITests.xctest */,
+				189FA5512DD90ECB00257251 /* FilterControlProvider.appex */,
+				189FA5662DD90EE100257251 /* FilterDataProvider.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		189FA5522DD90ECB00257251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189FA5532DD90ECB00257251 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +203,13 @@
 				189FA51C2DD90E9F00257251 /* Sources */,
 				189FA51D2DD90E9F00257251 /* Frameworks */,
 				189FA51E2DD90E9F00257251 /* Resources */,
+				189FA5612DD90ECB00257251 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				189FA55B2DD90ECB00257251 /* PBXTargetDependency */,
+				189FA56E2DD90EE100257251 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				189FA5222DD90E9F00257251 /* firewall */,
@@ -163,6 +267,50 @@
 			productReference = 189FA53A2DD90EA200257251 /* firewallUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		189FA5502DD90ECB00257251 /* FilterControlProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189FA55E2DD90ECB00257251 /* Build configuration list for PBXNativeTarget "FilterControlProvider" */;
+			buildPhases = (
+				189FA54D2DD90ECB00257251 /* Sources */,
+				189FA54E2DD90ECB00257251 /* Frameworks */,
+				189FA54F2DD90ECB00257251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				189FA5552DD90ECB00257251 /* FilterControlProvider */,
+			);
+			name = FilterControlProvider;
+			packageProductDependencies = (
+			);
+			productName = FilterControlProvider;
+			productReference = 189FA5512DD90ECB00257251 /* FilterControlProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		189FA5652DD90EE100257251 /* FilterDataProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189FA5712DD90EE100257251 /* Build configuration list for PBXNativeTarget "FilterDataProvider" */;
+			buildPhases = (
+				189FA5622DD90EE100257251 /* Sources */,
+				189FA5632DD90EE100257251 /* Frameworks */,
+				189FA5642DD90EE100257251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				189FA5682DD90EE100257251 /* FilterDataProvider */,
+			);
+			name = FilterDataProvider;
+			packageProductDependencies = (
+			);
+			productName = FilterDataProvider;
+			productReference = 189FA5662DD90EE100257251 /* FilterDataProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +332,12 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 189FA51F2DD90E9F00257251;
 					};
+					189FA5502DD90ECB00257251 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					189FA5652DD90EE100257251 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = 189FA51B2DD90E9F00257251 /* Build configuration list for PBXProject "firewall" */;
@@ -203,6 +357,8 @@
 				189FA51F2DD90E9F00257251 /* firewall */,
 				189FA52F2DD90EA200257251 /* firewallTests */,
 				189FA5392DD90EA200257251 /* firewallUITests */,
+				189FA5502DD90ECB00257251 /* FilterControlProvider */,
+				189FA5652DD90EE100257251 /* FilterDataProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +379,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		189FA5382DD90EA200257251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189FA54F2DD90ECB00257251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189FA5642DD90EE100257251 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +423,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		189FA54D2DD90ECB00257251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189FA5622DD90EE100257251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +449,16 @@
 			isa = PBXTargetDependency;
 			target = 189FA51F2DD90E9F00257251 /* firewall */;
 			targetProxy = 189FA53B2DD90EA200257251 /* PBXContainerItemProxy */;
+		};
+		189FA55B2DD90ECB00257251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189FA5502DD90ECB00257251 /* FilterControlProvider */;
+			targetProxy = 189FA55A2DD90ECB00257251 /* PBXContainerItemProxy */;
+		};
+		189FA56E2DD90EE100257251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189FA5652DD90EE100257251 /* FilterDataProvider */;
+			targetProxy = 189FA56D2DD90EE100257251 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = firewall/firewall.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"firewall/Preview Content\"";
@@ -422,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = firewall/firewall.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"firewall/Preview Content\"";
@@ -518,6 +714,110 @@
 			};
 			name = Release;
 		};
+		189FA55F2DD90ECB00257251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterControlProvider/FilterControlProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZ9NKHJ2ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilterControlProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilterControlProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naviz.firewall.FilterControlProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		189FA5602DD90ECB00257251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterControlProvider/FilterControlProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZ9NKHJ2ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilterControlProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilterControlProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naviz.firewall.FilterControlProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		189FA5722DD90EE100257251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterDataProvider/FilterDataProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZ9NKHJ2ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilterDataProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilterDataProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naviz.firewall.FilterDataProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		189FA5732DD90EE100257251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterDataProvider/FilterDataProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZ9NKHJ2ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilterDataProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilterDataProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naviz.firewall.FilterDataProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +853,24 @@
 			buildConfigurations = (
 				189FA54B2DD90EA200257251 /* Debug */,
 				189FA54C2DD90EA200257251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189FA55E2DD90ECB00257251 /* Build configuration list for PBXNativeTarget "FilterControlProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189FA55F2DD90ECB00257251 /* Debug */,
+				189FA5602DD90ECB00257251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189FA5712DD90EE100257251 /* Build configuration list for PBXNativeTarget "FilterDataProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189FA5722DD90EE100257251 /* Debug */,
+				189FA5732DD90EE100257251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
